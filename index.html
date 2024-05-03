@@ -71,13 +71,36 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <meta name="generator" content="WordPress 6.3.1" />
 
 <!-- Call Now Button 0.3.6 by Jerry Rietveld (callnowbutton.com) -->
-<style>#callnowbutton {display:none;} @media screen and (max-width:650px){#callnowbutton {display:block; position:fixed; text-decoration:none; z-index:2147483647;width:100%;left:0;bottom:0;height:60px;border-top:1px solid #54ff62; border-bottom:1px solid #00a603;text-shadow: 0 1px #00a603; text-align:center;color:#fff; font-weight:600; font-size:120%;  overflow: hidden;padding-right:20px;background:#27d835;display: flex; justify-content: center; align-items: center;}body {padding-bottom:60px;}#callnowbutton img {transform: scale(0.9);}}#callnowbutton .NoButtonText{display:none;}</style>
+<style>
+	#callnowbutton {display:none;} @media screen and (max-width:650px){#callnowbutton {display:block; position:fixed; text-decoration:none; z-index:2147483647;width:100%;left:0;bottom:0;height:60px;border-top:1px solid #54ff62; border-bottom:1px solid #00a603;text-shadow: 0 1px #00a603; text-align:center;color:#fff; font-weight:600; font-size:120%;  overflow: hidden;padding-right:20px;background:#27d835;display: flex; justify-content: center; align-items: center;}body {padding-bottom:60px;}#callnowbutton img {transform: scale(0.9);}}#callnowbutton .NoButtonText{display:none;}</style>
 		<style type="text/css">
 					.site-title,
 			.site-description {
 			position: absolute;
 			clip: rect(1px, 1px, 1px, 1px);
 			}
+					.sub-menu li a{
+						padding-left: 0;
+						padding-top: 0;
+						padding-bottom: 8px;
+						font-size: 14px;
+					}
+					.list-articles{
+						list-style: none;
+						padding-left: 0;
+						margin-left: 0;
+
+					}
+					.new-articles .heading{
+						font-size: 24px;
+						margin-bottom: 12px;
+						color: #000!important;
+						text-align: center;
+					}
+					.article-item{
+						margin-bottom: 12px;
+					}
+
 				</style>
 		<link rel="icon" href="./wp-content/uploads/2019/12/Capture-3-150x150.jpg" sizes="32x32" />
 <link rel="icon" href="./wp-content/uploads/2019/12/Capture-3.jpg" sizes="192x192" />
@@ -102,14 +125,14 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		<div class="site-branding">
 			
 							<h1 class="site-title">
-					<a href="./" rel="home">
+					<a href="#" rel="home">
 						Le Magny					</a>
 				</h1>
 							<p class="site-description">Restaurant cuisine traditionnelle</p>
 					</div>
 
 		   			<div class="header-image">
-				<a href="./" rel="home">
+				<a href="#" rel="home">
 					<img src="./wp-content/uploads/2019/12/cropped-21761676_1446159625431988_5184044975194160298_n-5.jpg" height="352" width="872" alt="Le Magny">
 				</a>
 			</div>
@@ -123,7 +146,16 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="./index.php/galerie/">Galerie</a></li>
 <li id="menu-item-207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-207"><a href="./index.php/articles/">À propos</a></li>
 <li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134"><a href="./index.php/nous-contacter/">Accès et contact</a></li>
-</ul></div>		</nav><!-- #site-navigation -->
+				<li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134">
+					<a href="#">Villes</a>
+					<ul class="sub-menu">
+						<li><a href="#">Ha Noi</a></li>
+						<li><a href="#">Ho Chi Minh</a></li>
+					</ul>
+				</li>
+
+			</ul></div>
+		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div class="container">
@@ -255,6 +287,27 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		</div>
 	</article>
 </div>
+
+			<section class="new-articles">
+				<div class="heading">Nouvel article</div>
+				<ul  class="list-articles">
+					<li class="article-item">
+						<a href="#">Top 12 hotels in Saint-Roch Quebec</a>
+					</li>
+					<li class="article-item">
+						<a href="#">Best of 18 bars in Saint-Roch Quebec</a>
+					</li>
+					<li class="article-item">
+						<a href="#">Top 19 lunch restaurants in Saint-Roch Quebec</a>
+					</li>
+					<li class="article-item">
+					<a href="#">Top 10 breakfast restaurants in Saint-Roch Quebec</a>
+				</li>
+					<li class="article-item">
+						<a href="#">Best of 18 bars in Saint-Roch Quebec</a>
+					</li>
+				</ul>
+			</section>
 
     
     </main>
