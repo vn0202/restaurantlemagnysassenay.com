@@ -2,13 +2,13 @@
 	<service>
 		<engineName>WordPress</engineName>
 		<engineLink>https://wordpress.org/</engineLink>
-		<homePageLink>https://restaurantlemagnysassenay.com</homePageLink>
+		<homePageLink></homePageLink>
 		<apis>
-			<api name="WordPress" blogID="1" preferred="true" apiLink="https://restaurantlemagnysassenay.com/xmlrpc.php" />
-			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://restaurantlemagnysassenay.com/xmlrpc.php" />
-			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://restaurantlemagnysassenay.com/xmlrpc.php" />
-			<api name="Blogger" blogID="1" preferred="false" apiLink="https://restaurantlemagnysassenay.com/xmlrpc.php" />
-				<api name="WP-API" blogID="1" preferred="false" apiLink="https://restaurantlemagnysassenay.com/index.php/wp-json/" />
+			<api name="WordPress" blogID="1" preferred="true" apiLink="/xmlrpc.php" />
+			<api name="Movable Type" blogID="1" preferred="false" apiLink="/xmlrpc.php" />
+			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="/xmlrpc.php" />
+			<api name="Blogger" blogID="1" preferred="false" apiLink="/xmlrpc.php" />
+				<api name="WP-API" blogID="1" preferred="false" apiLink="/index.php/wp-json/" />
 			</apis>
 	</service>
 </rsd>
